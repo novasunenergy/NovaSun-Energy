@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Get a Free Solar Quote</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        input, select, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+    </style>
+</head>
+<body>
+    <nav>...</nav>
+
+    <section class="container" style="margin-top:100px;">
+        <div class="contact-grid">
+            <div>
+                <h2>Request a Free Quote</h2>
+                <p>Fill in your details and our solar expert will contact you within 24 hours.</p>
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="tel" placeholder="Mobile Number" required>
+                    <input type="text" placeholder="City" required>
+                    <select required>
+                        <option value="">Monthly Electricity Bill</option>
+                        <option>Below ₹1,500</option>
+                        <option>₹1,500 - ₹3,000</option>
+                        <option>₹3,000 - ₹5,000</option>
+                        <option>Above ₹5,000</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary" style="width:100%; border:none; cursor:pointer;">Get Free Quote</button>
+                </form>
+            </div>
+            <div>
+                <h2>Get In Touch</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 402, Shree Ganesh Divine, Uttara Nagar Lane No. 2, Tapowan Link Road, Nashik - 422011</p>
+                <p><i class="fas fa-phone"></i> +91 7709572087 / +91 8208433972</p>
+                <p><i class="fas fa-envelope"></i> wenovasunenergy@gmail.com</p>
+                <div style="margin-top:30px;">
+                    <a href="https://wa.me/917709572087" class="btn btn-outline" style="background:#25d366; border:none;">Chat on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
