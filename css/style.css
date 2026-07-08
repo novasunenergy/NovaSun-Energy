@@ -309,3 +309,40 @@ footer {
     .grid-3, .footer-grid, .stats-grid { grid-template-columns: 1fr; }
     .nav-links { display: none; }
 }
+/* Update the Logo styling to accommodate the image */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    font-weight: 800;
+    line-height: 1;
+}
+
+/* Updated Hero Section with Solar Background Image */
+.hero {
+    height: 100vh;
+    /* This adds a professional solar farm background with a dark tint for readability */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1509391366360-fe5bb584852a?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* Optional: Add a light solar watermark background to the whole page body */
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), 
+                      url('https://www.transparenttextures.com/patterns/cubes.png');
+}
