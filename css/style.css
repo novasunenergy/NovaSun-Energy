@@ -313,12 +313,12 @@ footer {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .logo img {
-    height: 50px; /* Adjust height as needed */
+    height: 55px;
     width: auto;
+    object-fit: contain;
 }
 
 .logo h1 {
@@ -330,17 +330,16 @@ footer {
 
 /* Updated Hero Section with Solar Background Image */
 .hero {
-    height: 100vh;
-    /* This adds a professional solar farm background with a dark tint for readability */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('https://images.unsplash.com/photo-1509391366360-fe5bb584852a?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+    min-height: 90vh;
+    background: linear-gradient(rgba(13, 42, 90, 0.75), rgba(13, 42, 90, 0.75)), 
+                url('https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1920') no-repeat center center/cover;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
     text-align: center;
-    padding-top: 80px;
+    padding: 120px 20px 60px;
 }
-
 /* Optional: Add a light solar watermark background to the whole page body */
 body {
     background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), 
