@@ -1,0 +1,311 @@
+/* 
+    Project: NovaSun Energy & Services 
+    Theme: Premium Solar EPC
+    Colors: Blue (#1a4ba0), Red (#e31e24)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-blue: #1a4ba0;
+    --secondary-red: #e31e24;
+    --dark-blue: #0d2a5a;
+    --light-bg: #f8faff;
+    --white: #ffffff;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- Layout Containers --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.section-title .underline {
+    width: 80px;
+    height: 4px;
+    background: var(--secondary-red);
+    margin: 10px auto;
+}
+
+/* --- Navigation --- */
+nav {
+    height: 80px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    font-weight: 800;
+}
+
+.logo span {
+    color: var(--secondary-red);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-left: 30px;
+    transition: var(--transition);
+}
+
+.nav-links li a:hover, .nav-links li a.active {
+    color: var(--primary-blue);
+}
+
+.nav-cta {
+    background: var(--secondary-red);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(13, 42, 90, 0.7), rgba(13, 42, 90, 0.7)), 
+                url('https://images.unsplash.com/photo-1509391366360-fe5bb584852a?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn-primary {
+    background: var(--secondary-red);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #c2181d;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--primary-blue);
+}
+
+/* --- Stats --- */
+.stats {
+    background: var(--primary-blue);
+    color: white;
+    padding: 60px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 20px;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+/* --- Cards & Glassmorphism --- */
+.card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    border-bottom: 4px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-bottom: 4px solid var(--secondary-red);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* --- FAQ Accordion --- */
+.faq-item {
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.faq-question {
+    padding: 20px;
+    background: #fdfdfd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: white;
+}
+
+/* --- Subsidy Table --- */
+.subsidy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.subsidy-table th, .subsidy-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.subsidy-table th {
+    background: var(--primary-blue);
+    color: white;
+}
+
+/* --- Float Buttons --- */
+.float-btn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.whatsapp-float { right: 40px; background-color: #25d366; }
+.call-float { right: 40px; bottom: 110px; background-color: var(--primary-blue); }
+
+/* --- Footer --- */
+footer {
+    background: var(--dark-blue);
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .grid-3, .footer-grid, .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-content h1 { font-size: 2.5rem; }
+}
+
+@media (max-width: 600px) {
+    .grid-3, .footer-grid, .stats-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+}
